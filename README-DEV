@@ -1,0 +1,5 @@
+# Development Notes
+
+The header file `imgui-SFML_export.h` in the `libimgui-framework-sfml` package is actually not symlinked but was copied and edited to avoid the redefinition of the macro `IMGUI_API`. The macro is already defined by the imgui base package, but `imgui-sfml` also defines it, so we had to copy the header file and remove the respective lines.
+
+If the upstream version is updated, this file has to be revised and adjusted, if needed by the new version.
