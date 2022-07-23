@@ -1,2 +1,5 @@
 : 1
 location: libimgui-framework-sfml/
+
+:
+location: imgui-framework-sfml-examples/

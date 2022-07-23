@@ -1,0 +1,4 @@
+impl_libs = # Implementation libs.
+import impl_libs += libimgui-framework-sfml%lib{imgui-framework-sfml}
+
+exe{example_multiple_windows} : cxx{*} $impl_libs
