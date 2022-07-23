@@ -1,0 +1,33 @@
+intf_libs = # Interface dependencies.
+import intf_libs += libsfml-system%lib{sfml-system}
+import intf_libs += libsfml-window%lib{sfml-window}
+import intf_libs += libsfml-graphics%lib{sfml-graphics}
+import intf_libs += libimgui%lib{imgui}
+
+lib{imgui-framework-sfml}: {hxx cxx}{**} $intf_libs
+
+cxx.poptions += "-I$out_base" "-I$src_base" -DIMGUI_SFML_EXPORTS
+
+{hbmis objs}{*}: cxx.poptions += -DIMGUI_SFML_SHARED_LIB
+
+# Export options.
+lib{imgui-framework-sfml}:
+{
+    cxx.export.poptions = "-I$out_base" "-I$src_base"
+    cxx.export.libs = $intf_libs
+}
+
+libs{imgui-framework-sfml}: cxx.export.poptions += -DIMGUI_SFML_SHARED_LIB
+
+# For pre-releases use the complete version to make sure they cannot be used
+# in place of another pre-release or the final version. See the version module
+# for details on the version.* variable values.
+if $version.pre_release
+    lib{imgui-framework-sfml}: bin.lib.version = "-$version.project_id"
+else
+    lib{imgui-framework-sfml}: bin.lib.version = "-$version.major.$version.minor"
+
+hxx{*}:
+{
+    install = include/imgui/backends/
+}

@@ -1,0 +1,7 @@
+project = libimgui-framework-sfml
+
+using version
+using config
+using test
+using install
+using dist
