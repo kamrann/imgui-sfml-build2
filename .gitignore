@@ -1,5 +1,8 @@
 .bdep/
 
+# Imgui output
+**/imgui.ini
+
 # IDE support
 .vs/
 .vscode/

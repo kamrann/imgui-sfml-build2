@@ -5,10 +5,10 @@
 ## Usage
 
 Simply add the backend package to your `manifest`.
-Note that `libimgui-sfml` package is a framework backend, which means it is all self-contained and you do not need any additional render or platform backend.
+Note that the `libimgui-framework-sfml` package is a framework backend, which means it is all self-contained and you do not need to add any additional render or platform backend.
 
 ```
-depends: libimgui-framwwork-sfml
+depends: libimgui-framework-sfml
 ```
 
 Headers are included without any prefix, for example:
