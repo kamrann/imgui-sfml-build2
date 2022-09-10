@@ -1,5 +1,5 @@
 : 1
-name: imgui-framework-sfml-examples
+name: libimgui-framework-sfml-examples
 version: 2.5.0-a.0.z
 project: imgui
 summary: Example applications for the Dear ImGui framework backend for SFML.
@@ -12,7 +12,7 @@ src-url : https://github.com/eliasdaler/imgui-sfml
 package-url: https://github.com/build2-packaging/imgui-sfml
 package-email: rookfighter@posteo.org
 
-depends: * build2 >= 0.15.0-
-depends: * bpkg >= 0.15.0-
+depends: * build2 >= 0.15.0
+depends: * bpkg >= 0.15.0
 
 depends: libimgui-framework-sfml == $

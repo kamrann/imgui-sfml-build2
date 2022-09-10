@@ -1,4 +1,4 @@
-project = imgui-framework-sfml-examples
+project = libimgui-framework-sfml-examples
 
 using version
 using config

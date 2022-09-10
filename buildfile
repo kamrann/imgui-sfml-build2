@@ -1,2 +1,2 @@
-import pkgs = {libimgui-framework-sfml/ imgui-framework-sfml-examples/}
+import pkgs = {libimgui-framework-sfml/ libimgui-framework-sfml-examples/}
 ./: $pkgs
