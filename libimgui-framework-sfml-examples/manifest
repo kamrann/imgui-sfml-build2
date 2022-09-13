@@ -1,6 +1,6 @@
 : 1
 name: libimgui-framework-sfml-examples
-version: 2.5.0-a.0.z
+version: 2.5.0
 project: imgui
 summary: Example applications for the Dear ImGui framework backend for SFML.
 license: MIT
