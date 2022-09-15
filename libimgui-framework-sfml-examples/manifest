@@ -11,6 +11,7 @@ doc-url: https://eliasdaler.github.io/using-imgui-with-sfml-pt1/
 src-url : https://github.com/eliasdaler/imgui-sfml
 package-url: https://github.com/build2-packaging/imgui-sfml
 package-email: packaging@build2.org ; Mailing list.
+builds: default
 
 depends: * build2 >= 0.15.0
 depends: * bpkg >= 0.15.0
