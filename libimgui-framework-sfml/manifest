@@ -18,6 +18,6 @@ depends: * build2 >= 0.15.0
 depends: * bpkg >= 0.15.0
 
 depends: libimgui ^1.86.0
-depends: libsfml-system ^2.5.0
-depends: libsfml-graphics ^2.5.0
-depends: libsfml-window ^2.5.0
+depends: libsfml-system ^2.6.0
+depends: libsfml-graphics ^2.6.0
+depends: libsfml-window ^2.6.0
