@@ -1,6 +1,6 @@
 : 1
 name: libimgui-framework-sfml
-version: 2.5.0+1
+version: 2.6.0-a.0.z
 project: imgui
 summary: Dear ImGui framework backend for SFML.
 license: MIT
